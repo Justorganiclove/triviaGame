@@ -20,5 +20,3 @@ There were no contributors in this project.
 ## Licenses
 
 There were no licenses for this project.
-
-
