@@ -48,20 +48,15 @@ $("#start").on("click", function() {
 
         /////selectiong/deselecting correct answer---this still needs work is not updating to the last screen
         $("#correct").on("click", function() {
-            correctanswers +=1;
+            correctanswers += 1;
             console.log("correctanswers:" + correctanswers);
             $("#correctanswers").text("Correct Answers: " + correctanswers);
             $("#correct").css({ "background-color": "#e9f3fe" })
-         
+
 
         });
     }
-
-    
-
-///selecting/deselecting incorrect answer -- -this still needs to work
-
-
+    ///selecting/deselecting incorrect answer -- -this still needs to work
 
     function timeConverter(timeUp) {
         var minutes = Math.floor(timeUp / 60);
@@ -72,9 +67,9 @@ $("#start").on("click", function() {
     start();
 });
 
+// Questionnaire_________________________________________________________
+//not sure if there is an easier way to present this info-- I got confused with this one;(
 
-
-// Questionnaire__________________________________________________________________________
 var questions =
     // Question 1
     "<br/>" +
@@ -116,17 +111,11 @@ var questions =
 ////________________________________________________________________________________________________________________
 
 
-
-
 // RESULTS______________________________________________________________________________________________________________________
 
 var results =
-
     "<section id='results'>" +
     "<div id='total'>" + "Total questions answered: " + total + "</div>" + ///still need to make this count
-    "<div id='correct'>" "Correct answers: " + "</div>" + ///still need to make this count
-    "<div id=missed>" "Incorrect answers " +"</div>"; ///still need to make this count
+    "<div id='correct'>" + "Correct answers: " + "</div>" + ///still need to make this count
+    "<div id=missed>" + "Incorrect answers " + "</div>"; ///still need to make this count
 "</section>";
-
-
-
